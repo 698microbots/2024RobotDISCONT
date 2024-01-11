@@ -9,14 +9,14 @@ import com.ctre.phoenix.motorcontrol.can.TalonFX;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-public class DriveTrain extends SubsystemBase {
+public class Flywheel extends SubsystemBase {
 
   private final TalonFX Rmotor = new TalonFX(0);
   private final TalonFX Lmotor = new TalonFX(1);
   
 
   /** Creates a new DriveTrain. */
-  public DriveTrain() {
+  public Flywheel() {
   }
 
   public void setRightMotor(double speed) {
