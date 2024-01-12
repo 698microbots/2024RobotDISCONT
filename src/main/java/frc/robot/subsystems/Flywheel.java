@@ -11,22 +11,15 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Flywheel extends SubsystemBase {
 
-  private final TalonFX Rmotor = new TalonFX(0);
-  private final TalonFX Lmotor = new TalonFX(1);
+  private final TalonFX motor = new TalonFX(0);
   
 
   /** Creates a new DriveTrain. */
   public Flywheel() {
   }
 
-  public void setRightMotor(double speed) {
-    
-    Rmotor.set(ControlMode.PercentOutput, speed);
-
-  }
-
-  public void setLeftMotor(double speed) {
-    Lmotor.set(ControlMode.PercentOutput, speed);
+  public void setFlywheelMotorSpeed(double speed) {
+    motor.set(ControlMode.PercentOutput, speed);
   }
 
   @Override
