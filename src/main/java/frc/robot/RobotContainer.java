@@ -6,6 +6,7 @@ package frc.robot;
 
 import com.kauailabs.navx.frc.AHRS;
 
+import edu.wpi.first.hal.FRCNetComm.tResourceType;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.SPI;
 import edu.wpi.first.wpilibj.SerialPort;
@@ -74,7 +75,21 @@ public class RobotContainer {
     // // cancelling on release.
     // m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
 
-    buttonX.
+    
+    // command for the flywheel motor
+    // using the A button
+    boolean toggle = false; // indicated whether the button is pressed
+    Flywheel flywheel = new Flywheel(); // object for the Flywheel calss
+
+    if (xboxController.getAButton()) {
+      if(toggle) {
+        flywheel.setFlywheelMotorSpeed(0); // set the speed to 0
+        toggle = false;
+      } else {
+        flywheel.setFlywheelMotorSpeed(/*the speed or the variable for the speed goes here */); // set the motor speed to the desired speed
+        toggle = true;
+      }
+    }
   }
 
   /**
