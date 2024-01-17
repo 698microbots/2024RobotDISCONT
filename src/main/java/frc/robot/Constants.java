@@ -15,5 +15,15 @@ package frc.robot;
 public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
+
+        //Controller Button IDs
+        public static final int Xbox_Button_A = 1;
+        public static final int Xbox_Button_B = 2;
+        public static final int Xbox_Button_X = 3;
+        public static final int Xbox_Button_Y = 4;
+        public static final int Xbox_Button_LB = 5;
+        public static final int Xbox_Button_RB = 6;
+        public static final int Xbox_Button_LS = 9;
+        public static final int Xbox_Button_RS = 10;
   }
 }
