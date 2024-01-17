@@ -19,6 +19,7 @@ import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 
+
 /**
  * This class is where the bulk of the robot should be declared. Since
  * Command-based is a
@@ -33,14 +34,13 @@ public class RobotContainer {
   public final AHRS navX = new AHRS(SerialPort.Port.kUSB); // new NavX Object
 
   // The robot's subsystems and commands are defined here...
-  public final JoystickButton buttonA = new JoystickButton(xboxController, Constants.Xbox_Button_A);
-  public final JoystickButton buttonB = new JoystickButton(xboxController, Constants.Xbox_Button_B);
-  public final JoystickButton buttonX = new JoystickButton(xboxController, Constants.Xbox_Button_X);
-  public final JoystickButton buttonY = new JoystickButton(xboxController, Constants.Xbox_Button_Y);
-  private final JoystickButton buttonLB = new JoystickButton(xboxController, Constants.Xbox_Button_LB);
-  private final JoystickButton buttonRB = new JoystickButton(xboxController, Constants.Xbox_Button_RB);
-  private final JoystickButton buttonLS = new JoystickButton(xboxController, Constants.Xbox_Button_LS);
-  private final JoystickButton buttonRS = new JoystickButton(xboxController, Constants.Xbox_Button_RS);
+  //button definitions
+  private final JoystickButton Xbutton = new JoystickButton(xboxController, Constants.Xbox_Button_X);
+  private final JoystickButton Ybutton = new JoystickButton(xboxController, Constants.Xbox_Button_Y);
+  private final JoystickButton Abutton = new JoystickButton(xboxController, Constants.Xbox_Button_A);
+  private final JoystickButton Bbutton = new JoystickButton(xboxController, Constants.Xbox_Button_B);
+  private final JoystickButton RBbutton = new JoystickButton(xboxController, Constants.Xbox_Button_RB);
+  private final JoystickButton LBbutton = new JoystickButton(xboxController, Constants.Xbox_Button_LB);
 
   /**
    * The container for the robot. Contains subsystems, OI devices, and commands.
