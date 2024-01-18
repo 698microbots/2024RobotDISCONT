@@ -78,17 +78,12 @@ public class RobotContainer {
     
     // command for the flywheel motor
     // using the A button
-    boolean toggle = false; // indicated whether the button is pressed
     Flywheel flywheel = new Flywheel(); // object for the Flywheel calss
 
     if (xboxController.getAButton()) {
-      if(toggle) {
-        flywheel.setFlywheelMotorSpeed(0); // set the speed to 0
-        toggle = false;
-      } else {
-        flywheel.setFlywheelMotorSpeed(1 /*this is a placeholder */); // set the motor speed to the desired speed
-        toggle = true;
-      }
+        flywheel.setFlywheelMotorSpeed(1 ); // set the motor speed to the desired speed
+        // add code here that waits for some time before turning the motors off.
+      // }
     }
   }
 

@@ -31,4 +31,8 @@ public final class Constants {
   public static final int Xbox_Button_RB = 6;
   public static final int Xbox_Button_LS = 9;
   public static final int Xbox_Button_RS = 10;
+
+  // constants for the LimeLight
+  public static final int goalHeight = 0; // get this from the game manual later
+  public static final int limeLightHeight = 0/*placeholder */;
 }
