@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.networktables.NetworkTableEntry;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide
  * numerical or boolean
@@ -35,4 +37,5 @@ public final class Constants {
   // constants for the LimeLight
   public static final int goalHeight = 0; // get this from the game manual later
   public static final int limeLightHeight = 0/*placeholder */;
+  public static final double limeLightInitAngle = 0/*placeholder */;
 }

@@ -30,7 +30,27 @@ public class LimeLight extends SubsystemBase {
     botPose = limeLight.getEntry("botPose");
     aprilID = limeLight.getEntry("tid");
   }
+  // getters
+  public double hasTargets(){
+    return hasTargets.getDouble(0);
+  }
+  public double getV_angle(){
+    return V_angle.getDouble(0);
+  }
+  public double getH_angle(){
+    return H_angle.getDouble(0);
+  }
+  public double getBotPose(){
+    aprilTagList = botPose.getDoubleArray(new double[6]);
+    return aprilTagList[0];
+    
+  }
+  public double getaprilTagID(){
+    return aprilID.getDouble(0);
 
+  }
+
+  // setters
   public void setPipeline(int pipe){
     limeLight.getEntry("pipeline").setNumber(pipe); 
    }

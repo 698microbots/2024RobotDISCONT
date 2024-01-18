@@ -66,25 +66,14 @@ public class RobotContainer {
    * joysticks}.
    */
   private void configureBindings() {
-    // // Schedule `ExampleCommand` when `exampleCondition` changes to `true`
-    // new Trigger(m_exampleSubsystem::exampleCondition)
-    //     .onTrue(new ExampleCommand(m_exampleSubsystem));
-
-    // // Schedule `exampleMethodCommand` when the Xbox controller's B button is
-    // // pressed,
-    // // cancelling on release.
-    // m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
-
-    
-    // command for the flywheel motor
-    // using the A button
     Flywheel flywheel = new Flywheel(); // object for the Flywheel calss
 
-    if (xboxController.getAButton()) {
-        flywheel.setFlywheelMotorSpeed(1 ); // set the motor speed to the desired speed
-        // add code here that waits for some time before turning the motors off.
-      // }
-    }
+    // if (xboxController.getAButton()) {
+    //     flywheel.setFlywheelMotorSpeed(1 ); // set the motor speed to the desired speed
+    //     // add code here that waits for some time before turning the motors off.
+    //   // }
+    // }
+    Abutton.onTrue(new SetFlywheelMotor());
   }
 
   /**
