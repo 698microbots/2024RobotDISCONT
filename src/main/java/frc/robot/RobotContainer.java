@@ -86,7 +86,7 @@ public class RobotContainer {
         flywheel.setFlywheelMotorSpeed(0); // set the speed to 0
         toggle = false;
       } else {
-        flywheel.setFlywheelMotorSpeed(/*the speed or the variable for the speed goes here */); // set the motor speed to the desired speed
+        flywheel.setFlywheelMotorSpeed(1 /*this is a placeholder */); // set the motor speed to the desired speed
         toggle = true;
       }
     }
