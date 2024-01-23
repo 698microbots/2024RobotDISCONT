@@ -15,7 +15,6 @@ public class LimeLight extends SubsystemBase {
   // creates the instance variables for the LimeLight Subsystem
   private NetworkTable limeLight;
   private NetworkTableEntry V_angle, H_angle, hasTargets, botPose, aprilID;
-  // private double[] botPose;
   private double[] aprilTagList;
   private double zDistance;
   private double xDistance;
