@@ -66,7 +66,6 @@ public class RobotContainer {
    * joysticks}.
    */
   private void configureBindings() {
-    Flywheel flywheel = new Flywheel(); // object for the Flywheel calss
 
     // if (xboxController.getAButton()) {
     //     flywheel.setFlywheelMotorSpeed(1 ); // set the motor speed to the desired speed

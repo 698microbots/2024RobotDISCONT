@@ -66,6 +66,10 @@ public class LimeLight extends SubsystemBase {
     xDistance = calculateZdistance()*Math.tan(Math.toRadians(getH_angle()));
     return xDistance;
   }
+
+  public double calcHypotenuse() {
+    return Math.hypot(calculateXdistance(), calculateZdistance());
+  }
   
   @Override
   public void periodic() {
